@@ -93,7 +93,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                 label="Logout"
                 value="logout"
                 onClick={() => {
-                  signOut();
+                  signOut({ callbackUrl: "/", redirect: true });
                 }}
               />
             </>
